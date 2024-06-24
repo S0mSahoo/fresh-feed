@@ -1,0 +1,17 @@
+.card{ 
+    img{
+        height: 200px;
+    }
+}
+
+.card-title, .card-text{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.card-text{
+    -webkit-line-clamp: 4;
+    line-height: 1.2rem;
+    padding: 0 .5rem 0 .5rem;
+}
