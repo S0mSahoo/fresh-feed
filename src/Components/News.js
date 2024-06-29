@@ -14,7 +14,7 @@ export class News extends Component {
     async componentDidMount() {
         // console.log(this.props.color)
         let url = `https://newsapi.org/v2/${this.props.data}&language=en&apiKey=b38e404b2b2f43189e6324b198546b08`;
-        console.log(url);
+        // console.log(url);
         let data = await fetch(url);
         let parsedData = await data.json();
         this.setState(
@@ -28,7 +28,7 @@ export class News extends Component {
         if (this.props.data !== prevProps.data) {
             // console.log(this.props.color)
             let url = `https://newsapi.org/v2/${this.props.data}&language=en&apiKey=b38e404b2b2f43189e6324b198546b08`;
-            console.log(url);
+            // console.log(url);
             let data = await fetch(url);
             let parsedData = await data.json();
             this.setState(

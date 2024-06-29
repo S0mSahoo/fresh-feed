@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import './NewsItem.css'
+import Null from '../images/null.png'
 export class NewsItem extends Component {
     static propTypes = {
         title: PropTypes.string
@@ -10,7 +11,7 @@ export class NewsItem extends Component {
         return (
             <div className='container my-3'>
                 <div className="card">
-                    <img src={img === null?"./null.png": img} className="card-img-top" alt="..." />
+                    <img src={img === null?Null: img} className="card-img-top" alt="..." />
                     <div className="card-body">
                         <h5 className="card-title">{title}</h5>
                         <p className="card-text">{description === null?"Description not available": description}</p>
